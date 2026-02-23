@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario | Sistema de Órdenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" style="max-width: 900px;">
+        <header>
+            <a href="index.html" class="btn btn-outline" style="margin-bottom: 1rem;">← Volver</a>
+            <h1>Inventario de Productos</h1>
+            <p style="color: var(--text-muted);">Stock disponible en tiempo real</p>
+        </header>
+
+        <main>
+            <div id="loading" style="text-align: center; padding: 2rem;">Cargando inventario...</div>
+            <div id="tableContainer" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Stock Disponible</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaProductos">
+                        <!-- Datos cargados vía JS -->
+                    </tbody>
+                </table>
+            </div>
+            <pre id="res"></pre>
+        </main>
+    </div>
+    <script src="productos.js"></script>
+</body>
+</html>

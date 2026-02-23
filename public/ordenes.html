@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Órdenes | Sistema de Órdenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" style="max-width: 900px;">
+        <header>
+            <a href="index.html" class="btn btn-outline" style="margin-bottom: 1rem;">← Volver</a>
+            <h1>Consulta de Órdenes</h1>
+            <p style="color: var(--text-muted);">Historial de compras por cliente</p>
+        </header>
+
+        <main>
+            <div class="form-group" style="display: flex; gap: 0.5rem;">
+                <input type="text" id="rut" placeholder="Ingrese RUT para buscar (ej: 12.345.678-9)">
+                <button id="buscarBtn" class="btn btn-primary">🔍 Buscar</button>
+            </div>
+
+            <div id="results" style="margin-top: 2rem;">
+                <!-- Lista de órdenes cargada vía JS -->
+            </div>
+            <pre id="res"></pre>
+        </main>
+    </div>
+    <script src="ordenes.js"></script>
+</body>
+</html>
